@@ -34,7 +34,7 @@ Vagrant.configure("2") do |config|
   
   # Give the guest OS access to the user's home dir for .ssh keys and so on.
   # Enable nfs for faster performance. Ingored on Windows host.
-  config.vm.synced_folder "~/", "/host", nfs: true
+  #config.vm.synced_folder "~/", "/host", nfs: true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
