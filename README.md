@@ -22,7 +22,7 @@ This fork was created by [Osk](https://github.com/oskosk) on May 2015.
 [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 
-## Setup: Vagrantfile
+## Setup & running
 
 ```
 git clone git@github.com:interactar/nodejs-vagrant.git
