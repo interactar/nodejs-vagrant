@@ -1,6 +1,17 @@
 # nodejs-vagrant
 
-Provisions a clean Ubuntu 12.04 32-bit server instance with all needed Node.js development tools (Node.js, git, vim); services (MongoDB, Redis, GitHub, Heroku, Travis-CI).
+Provisions a clean Ubuntu 14.04 64-bit server instance with all needed Node.js 
+development tools (Node.js, git, vim); services (MongoDB, Redis, GitHub, Heroku, Travis-CI).
+
+Forked from https://github.com/cbumgard/nodejs-vagrant
+
+
+## Differences from the original project
+
+This fork was created by [Osk](https://github.com/oskosk) on May 2015.
+
+* The base box is an Ubuntu Trusty (14.04) 64-bit.
+* Does not try to init NFS on box.
 
 ## Install Vagrant & VirtualBox
 
@@ -10,23 +21,11 @@ Provisions a clean Ubuntu 12.04 32-bit server instance with all needed Node.js d
 ### Install VirtualBox:
 [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
-## Setup Option 1: Box
+
+## Setup: Vagrantfile
 
 ```
-mkdir DIR && cd DIR
-vagrant init cbumgard/nodejs
-vagrant up
-vagrant ssh
-```
-
-Done!
-
-For more see: [https://vagrantcloud.com/cbumgard/nodejs](https://vagrantcloud.com/cbumgard/nodejs)
-
-## Setup Option 2: Vagrantfile
-
-```
-git clone git@github.com:cbumgard/nodejs-vagrant.git
+git clone git@github.com:interactar/nodejs-vagrant.git
 cd nodejs-vagrant
 vagrant up
 vagrant ssh
